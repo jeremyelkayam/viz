@@ -34,32 +34,42 @@
   <body>
 
 <!-- load the d3.js library -->	
-<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="d3.v3.min.js"></script>
 	
 <script>
 
 var treeData = [
   {
-    "name": "Top Level",
+    "name": "DoS",
     "parent": "null",
     "children": [
       {
-        "name": "Level 2: A",
-        "parent": "Top Level",
+        "name": "Appropriation Fund A",
+        "parent": "DoS",
         "children": [
           {
-            "name": "Son of A",
-            "parent": "Level 2: A"
+            "name": "Bureau OBO",
+            "parent": "Appropriation Fund A",
+			      "children": [
+			      {
+			        "name": "Allotment 12",
+			        "parent": "Bureau OBO"
+			      },
+			      {
+			        "name": "Allotment 34",
+			        "parent": "Bureau OBO"
+			      }
+			    ]
           },
           {
-            "name": "Daughter of A",
-            "parent": "Level 2: A"
+            "name": "Bureau DS",
+            "parent": "Appropriation"
           }
         ]
       },
       {
-        "name": "Level 2: B",
-        "parent": "Top Level"
+        "name": "Appropriation Fund B",
+        "parent": "DoS"
       }
     ]
   }
