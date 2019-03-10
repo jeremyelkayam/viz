@@ -12,6 +12,7 @@ modules:
           name: core-xsjs-backend
           url: '~{url}'
           forwardAuthToken: true
+        group: destinations
   - name: db
     type: hdb
     path: db
