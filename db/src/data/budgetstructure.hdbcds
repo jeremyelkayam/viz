@@ -1,0 +1,11 @@
+context budgetstructure {
+
+
+Entity BudgetNode{
+     key NODENAME: String(40);
+     NODEPARENT: String(40);
+     NODECHILD: String(40);
+    }; 
+
+
+};
