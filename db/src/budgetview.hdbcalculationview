@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="budgetview" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="budgetview"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="budgetstructure.BudgetNode">
+    <resourceUri>budgetstructure.BudgetNode</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews>
+  <calculationView xsi:type="Calculation:ProjectionView" id="Projection_1" filterExpressionLanguage="COLUMN_ENGINE">
+    <viewAttributes>
+      <viewAttribute id="NODENAME">
+        <descriptions defaultDescription="NODENAME"/>
+      </viewAttribute>
+      <viewAttribute id="NODEPARENT">
+        <descriptions defaultDescription="NODEPARENT"/>
+      </viewAttribute>
+      <viewAttribute id="NODECHILD">
+        <descriptions defaultDescription="NODECHILD"/>
+      </viewAttribute>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="budgetstructure.BudgetNode">
+      <mapping xsi:type="Calculation:AttributeMapping" target="NODENAME" source="NODENAME"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="NODEPARENT" source="NODEPARENT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="NODECHILD" source="NODECHILD"/>
+    </input></calculationView>
+</calculationViews>
+<logicalModel id="Projection_1">
+  <attributes>
+    <attribute id="NODENAME" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="NODENAME"/>
+      <keyMapping columnObjectName="Projection_1" columnName="NODENAME"/>
+    </attribute>
+    <attribute id="NODEPARENT" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="NODEPARENT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="NODEPARENT"/>
+    </attribute>
+    <attribute id="NODECHILD" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="NODECHILD"/>
+      <keyMapping columnObjectName="Projection_1" columnName="NODECHILD"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  
+    <shape expanded="true" modelObjectName="Projection_1" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="66" y="185"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

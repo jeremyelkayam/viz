@@ -1,3 +1,4 @@
 service{
-	"budgetstructure.BudgetNode" as "BN";
+	"budgetview" as "BN"
+	keys("NODENAME");
 }
