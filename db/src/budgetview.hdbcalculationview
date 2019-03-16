@@ -9,7 +9,7 @@
   </DataSource>
 </dataSources>
 <calculationViews>
-  <calculationView xsi:type="Calculation:ProjectionView" id="Projection_1" filterExpressionLanguage="COLUMN_ENGINE">
+  <calculationView xsi:type="Calculation:ProjectionView" id="Projection_1">
     <viewAttributes>
       <viewAttribute id="NODENAME">
         <descriptions defaultDescription="NODENAME"/>
@@ -20,6 +20,10 @@
       <viewAttribute id="NODECHILD">
         <descriptions defaultDescription="NODECHILD"/>
       </viewAttribute>
+    
+      <viewAttribute id="NODEVALUE">
+        <descriptions defaultDescription="NODEVALUE"/>
+      </viewAttribute>
     </viewAttributes>
     <calculatedViewAttributes/>
     <restrictedViewAttributes/>
@@ -27,6 +31,8 @@
       <mapping xsi:type="Calculation:AttributeMapping" target="NODENAME" source="NODENAME"/>
       <mapping xsi:type="Calculation:AttributeMapping" target="NODEPARENT" source="NODEPARENT"/>
       <mapping xsi:type="Calculation:AttributeMapping" target="NODECHILD" source="NODECHILD"/>
+    
+      <mapping xsi:type="Calculation:AttributeMapping" target="NODEVALUE" source="NODEVALUE"/>
     </input></calculationView>
 </calculationViews>
 <logicalModel id="Projection_1">
@@ -42,6 +48,11 @@
     <attribute id="NODECHILD" order="3" displayAttribute="false" attributeHierarchyActive="false">
       <descriptions defaultDescription="NODECHILD"/>
       <keyMapping columnObjectName="Projection_1" columnName="NODECHILD"/>
+    </attribute>
+  
+    <attribute id="NODEVALUE" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="NODEVALUE"/>
+      <keyMapping columnObjectName="Projection_1" columnName="NODEVALUE"/>
     </attribute>
   </attributes>
   <calculatedAttributes/>

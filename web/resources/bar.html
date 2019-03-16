@@ -62,45 +62,46 @@ var svg = d3.select("body").append("svg")
 var globaldata;
 
 
-$( document ).ready(function() {
-$.getJSON( "/xsodata/budgetstructure.xsodata/BN?$format=json", function( livedata ) {
-	globaldata = livedata.d.results;
-});
-});
+//$( document ).ready(function() {
+//$.getJSON( "/xsodata/budgetstructure.xsodata/BN?$format=json", function( livedata ) {
+//	globaldata = livedata.d.results;
+//});
+//});
 
 
 //d3.csv("sample-data.csv", 
 
 
+$( document ).ready(function() {
+$.getJSON( "/xsodata/budgetstructure.xsodata/BN?$format=json", function(livedata) {
 
-d3.csv("sample-data.csv", function(data) {
-
+  data = livedata.d.results
   // Parse numbers, and sort by value.
-  data.forEach(function(d) { d.value = +d.value; });
-  data.sort(function(a, b) { return b.value - a.value; });
+  data.forEach(function(d) { d.NODEVALUE = +d.NODEVALUE; });
+  data.sort(function(a, b) { return b.nodevalue - a.nodevalue; });
 
   // Set the scale domain.
-  x.domain([0, d3.max(data, function(d) { return d.value; })]);
-  y.domain(data.map(function(d) { return d.name; }));
+  x.domain([0, d3.max(data, function(d) { return d.NODEVALUE; })]);
+  y.domain(data.map(function(d) { return d.NODENAME; }));
 
   var bar = svg.selectAll("g.bar")
       .data(data)
     .enter().append("g")
       .attr("class", "bar")
-      .attr("transform", function(d) { return "translate(0," + y(d.name) + ")"; });
+      .attr("transform", function(d) { return "translate(0," + y(d.NODENAME) + ")"; });
 
   bar.append("rect")
-      .attr("width", function(d) { return x(d.value); })
+      .attr("width", function(d) { return x(d.NODEVALUE); })
       .attr("height", y.rangeBand());
 
   bar.append("text")
       .attr("class", "value")
-      .attr("x", function(d) { return x(d.value); })
+      .attr("x", function(d) { return x(d.NODEVALUE); })
       .attr("y", y.rangeBand() / 2)
       .attr("dx", -3)
       .attr("dy", ".35em")
       .attr("text-anchor", "end")
-      .text(function(d) { return format(d.value); });
+      .text(function(d) { return format(d.NODEVALUE); });
 
   svg.append("g")
       .attr("class", "x axis")
@@ -110,7 +111,7 @@ d3.csv("sample-data.csv", function(data) {
       .attr("class", "y axis")
       .call(yAxis);
 });
-
+});
     </script>
   </body>
 </html>
