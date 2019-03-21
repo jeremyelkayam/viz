@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="ATHLETES_FIFA" applyPrivilegeType="NONE" dataCategory="DIMENSION" schemaVersion="3.0" outputViewType="Aggregation" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="ATHLETES_FIFA"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="fifa.Athletes">
+    <resourceUri>fifa.Athletes</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+<logicalModel id="fifa.Athletes">
+  <attributes>
+    <attribute id="NUM" order="1">
+      <descriptions defaultDescription="NUM"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="NUM"/>
+    </attribute>
+    <attribute id="ID" order="2">
+      <descriptions defaultDescription="ID"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="ID"/>
+    </attribute>
+    <attribute id="Name" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Name"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="Name"/>
+    </attribute>
+    <attribute id="Age" order="4">
+      <descriptions defaultDescription="Age"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="Age"/>
+    </attribute>
+    <attribute id="Photo" order="5" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Photo"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="Photo"/>
+    </attribute>
+    <attribute id="Nationality" order="6" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Nationality"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="Nationality"/>
+    </attribute>
+    <attribute id="Flag" order="7" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Flag"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="Flag"/>
+    </attribute>
+    <attribute id="Overall" order="8">
+      <descriptions defaultDescription="Overall"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="Overall"/>
+    </attribute>
+    <attribute id="Potential" order="9">
+      <descriptions defaultDescription="Potential"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="Potential"/>
+    </attribute>
+    <attribute id="Club" order="10" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Club"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="Club"/>
+    </attribute>
+    <attribute id="Club_Logo" order="11" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Club_Logo"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="Club_Logo"/>
+    </attribute>
+    <attribute id="Value" order="12" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Value"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="Value"/>
+    </attribute>
+    <attribute id="Wage" order="13" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Wage"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="Wage"/>
+    </attribute>
+    <attribute id="Special" order="14">
+      <descriptions defaultDescription="Special"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="Special"/>
+    </attribute>
+    <attribute id="Preferred_Foot" order="15" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Preferred_Foot"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="Preferred_Foot"/>
+    </attribute>
+    <attribute id="International_Reputation" order="16">
+      <descriptions defaultDescription="International_Reputation"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="International_Reputation"/>
+    </attribute>
+    <attribute id="Weak_Foot" order="17">
+      <descriptions defaultDescription="Weak_Foot"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="Weak_Foot"/>
+    </attribute>
+    <attribute id="Skill_Moves" order="18">
+      <descriptions defaultDescription="Skill_Moves"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="Skill_Moves"/>
+    </attribute>
+    <attribute id="Work_Rate" order="19" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Work_Rate"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="Work_Rate"/>
+    </attribute>
+    <attribute id="Body_Type" order="20" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Body_Type"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="Body_Type"/>
+    </attribute>
+    <attribute id="Real_Face" order="21" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Real_Face"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="Real_Face"/>
+    </attribute>
+    <attribute id="Position" order="22" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Position"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="Position"/>
+    </attribute>
+    <attribute id="Jersey_Number" order="23">
+      <descriptions defaultDescription="Jersey_Number"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="Jersey_Number"/>
+    </attribute>
+    <attribute id="Joined" order="24" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Joined"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="Joined"/>
+    </attribute>
+    <attribute id="Loaned_From" order="25" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Loaned_From"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="Loaned_From"/>
+    </attribute>
+    <attribute id="Contract_Valid_Until" order="26" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Contract_Valid_Until"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="Contract_Valid_Until"/>
+    </attribute>
+    <attribute id="Height" order="27" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Height"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="Height"/>
+    </attribute>
+    <attribute id="Weight" order="28" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Weight"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="Weight"/>
+    </attribute>
+    <attribute id="LS" order="29" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LS"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="LS"/>
+    </attribute>
+    <attribute id="ST" order="30" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ST"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="ST"/>
+    </attribute>
+    <attribute id="RS" order="31" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RS"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="RS"/>
+    </attribute>
+    <attribute id="LW" order="32" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LW"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="LW"/>
+    </attribute>
+    <attribute id="LF" order="33" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LF"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="LF"/>
+    </attribute>
+    <attribute id="CF" order="34" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CF"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="CF"/>
+    </attribute>
+    <attribute id="RF" order="35" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RF"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="RF"/>
+    </attribute>
+    <attribute id="RW" order="36" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RW"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="RW"/>
+    </attribute>
+    <attribute id="LAM" order="37" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LAM"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="LAM"/>
+    </attribute>
+    <attribute id="CAM" order="38" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CAM"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="CAM"/>
+    </attribute>
+    <attribute id="RAM" order="39" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RAM"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="RAM"/>
+    </attribute>
+    <attribute id="LM" order="40" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LM"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="LM"/>
+    </attribute>
+    <attribute id="LCM" order="41" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LCM"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="LCM"/>
+    </attribute>
+    <attribute id="CM" order="42" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CM"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="CM"/>
+    </attribute>
+    <attribute id="RCM" order="43" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RCM"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="RCM"/>
+    </attribute>
+    <attribute id="RM" order="44" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RM"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="RM"/>
+    </attribute>
+    <attribute id="LWB" order="45" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LWB"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="LWB"/>
+    </attribute>
+    <attribute id="LDM" order="46" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LDM"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="LDM"/>
+    </attribute>
+    <attribute id="CDM" order="47" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CDM"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="CDM"/>
+    </attribute>
+    <attribute id="RDM" order="48" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RDM"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="RDM"/>
+    </attribute>
+    <attribute id="RWB" order="49" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RWB"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="RWB"/>
+    </attribute>
+    <attribute id="LB" order="50" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LB"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="LB"/>
+    </attribute>
+    <attribute id="LCB" order="51" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LCB"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="LCB"/>
+    </attribute>
+    <attribute id="CB" order="52" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CB"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="CB"/>
+    </attribute>
+    <attribute id="RCB" order="53" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RCB"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="RCB"/>
+    </attribute>
+    <attribute id="RB" order="54" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RB"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="RB"/>
+    </attribute>
+    <attribute id="Crossing" order="55">
+      <descriptions defaultDescription="Crossing"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="Crossing"/>
+    </attribute>
+    <attribute id="Finishing" order="56">
+      <descriptions defaultDescription="Finishing"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="Finishing"/>
+    </attribute>
+    <attribute id="HeadingAccuracy" order="57">
+      <descriptions defaultDescription="HeadingAccuracy"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="HeadingAccuracy"/>
+    </attribute>
+    <attribute id="ShortPassing" order="58">
+      <descriptions defaultDescription="ShortPassing"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="ShortPassing"/>
+    </attribute>
+    <attribute id="Volleys" order="59">
+      <descriptions defaultDescription="Volleys"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="Volleys"/>
+    </attribute>
+    <attribute id="Dribbling" order="60">
+      <descriptions defaultDescription="Dribbling"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="Dribbling"/>
+    </attribute>
+    <attribute id="Curve" order="61">
+      <descriptions defaultDescription="Curve"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="Curve"/>
+    </attribute>
+    <attribute id="FKAccuracy" order="62">
+      <descriptions defaultDescription="FKAccuracy"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="FKAccuracy"/>
+    </attribute>
+    <attribute id="LongPassing" order="63">
+      <descriptions defaultDescription="LongPassing"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="LongPassing"/>
+    </attribute>
+    <attribute id="BallControl" order="64">
+      <descriptions defaultDescription="BallControl"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="BallControl"/>
+    </attribute>
+    <attribute id="Acceleration" order="65">
+      <descriptions defaultDescription="Acceleration"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="Acceleration"/>
+    </attribute>
+    <attribute id="Speed" order="66">
+      <descriptions defaultDescription="Speed"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="Speed"/>
+    </attribute>
+    <attribute id="Agility" order="67">
+      <descriptions defaultDescription="Agility"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="Agility"/>
+    </attribute>
+    <attribute id="Reactions" order="68">
+      <descriptions defaultDescription="Reactions"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="Reactions"/>
+    </attribute>
+    <attribute id="Balance" order="69">
+      <descriptions defaultDescription="Balance"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="Balance"/>
+    </attribute>
+    <attribute id="ShotPower" order="70">
+      <descriptions defaultDescription="ShotPower"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="ShotPower"/>
+    </attribute>
+    <attribute id="Jumping" order="71">
+      <descriptions defaultDescription="Jumping"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="Jumping"/>
+    </attribute>
+    <attribute id="Stamina" order="72">
+      <descriptions defaultDescription="Stamina"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="Stamina"/>
+    </attribute>
+    <attribute id="Strength" order="73">
+      <descriptions defaultDescription="Strength"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="Strength"/>
+    </attribute>
+    <attribute id="LongShots" order="74">
+      <descriptions defaultDescription="LongShots"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="LongShots"/>
+    </attribute>
+    <attribute id="Aggression" order="75">
+      <descriptions defaultDescription="Aggression"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="Aggression"/>
+    </attribute>
+    <attribute id="Interceptions" order="76">
+      <descriptions defaultDescription="Interceptions"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="Interceptions"/>
+    </attribute>
+    <attribute id="Positioning" order="77">
+      <descriptions defaultDescription="Positioning"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="Positioning"/>
+    </attribute>
+    <attribute id="Vision" order="78">
+      <descriptions defaultDescription="Vision"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="Vision"/>
+    </attribute>
+    <attribute id="Penalties" order="79">
+      <descriptions defaultDescription="Penalties"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="Penalties"/>
+    </attribute>
+    <attribute id="Composure" order="80">
+      <descriptions defaultDescription="Composure"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="Composure"/>
+    </attribute>
+    <attribute id="Marking" order="81">
+      <descriptions defaultDescription="Marking"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="Marking"/>
+    </attribute>
+    <attribute id="StandingTackle" order="82">
+      <descriptions defaultDescription="StandingTackle"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="StandingTackle"/>
+    </attribute>
+    <attribute id="SlidingTackle" order="83">
+      <descriptions defaultDescription="SlidingTackle"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="SlidingTackle"/>
+    </attribute>
+    <attribute id="GKDiving" order="84">
+      <descriptions defaultDescription="GKDiving"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="GKDiving"/>
+    </attribute>
+    <attribute id="GKHandling" order="85">
+      <descriptions defaultDescription="GKHandling"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="GKHandling"/>
+    </attribute>
+    <attribute id="GKKicking" order="86">
+      <descriptions defaultDescription="GKKicking"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="GKKicking"/>
+    </attribute>
+    <attribute id="GKPositioning" order="87">
+      <descriptions defaultDescription="GKPositioning"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="GKPositioning"/>
+    </attribute>
+    <attribute id="GKReflexes" order="88">
+      <descriptions defaultDescription="GKReflexes"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="GKReflexes"/>
+    </attribute>
+    <attribute id="Release_Clause" order="89" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Release_Clause"/>
+      <keyMapping columnObjectName="fifa.Athletes" columnName="Release_Clause"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/></logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

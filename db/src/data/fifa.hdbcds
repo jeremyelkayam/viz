@@ -1,0 +1,104 @@
+context fifa {
+
+
+Entity NocRegions{
+     key NOC: String(255);
+     REGION: String(255);
+     NOTES: String(255);
+    };
+
+
+Entity Athletes{
+	key NUM: Decimal(15,2);  
+	ID: Decimal(15,2);  
+	Name: String(255);  
+Age: Decimal(15,2);  
+Photo: String(255);  
+Nationality: String(255);  
+Flag: String(255);  
+Overall: Decimal(15,2);  
+Potential: Decimal(15,2);  
+Club: String(255);  
+Club_Logo: String(255);  
+Value: String(255);  
+Wage: String(255);  
+Special:Decimal(15,2);  
+Preferred_Foot: String(255);  
+International_Reputation: Decimal(15,2);  
+Weak_Foot: Decimal(15,2);  
+Skill_Moves: Decimal(15,2);  
+Work_Rate: String(255);  
+Body_Type: String(255);  
+Real_Face: String(255);  
+Position: String(255);  
+Jersey_Number: Decimal(15,2);  
+Joined: String(255);  
+Loaned_From: String(255);  
+Contract_Valid_Until: String(255);  
+Height: String(255);  
+Weight: String(255);  
+LS: String(255);  
+ST: String(255);  
+RS: String(255);  
+LW: String(255);  
+LF: String(255);  
+CF: String(255);  
+RF: String(255);  
+RW: String(255);  
+LAM: String(255);  
+CAM: String(255);  
+RAM: String(255);  
+LM: String(255);  
+LCM: String(255);  
+CM: String(255);  
+RCM: String(255);  
+RM: String(255);  
+LWB: String(255);  
+LDM: String(255);  
+CDM: String(255);  
+RDM: String(255);  
+RWB: String(255);  
+LB: String(255);  
+LCB: String(255);  
+CB: String(255);  
+RCB: String(255);  
+RB: String(255);  
+Crossing: Decimal(15,2);  
+Finishing: Decimal(15,2);  
+HeadingAccuracy: Decimal(15,2);  
+ShortPassing: Decimal(15,2);  
+Volleys: Decimal(15,2);  
+Dribbling: Decimal(15,2);  
+Curve: Decimal(15,2);  
+FKAccuracy: Decimal(15,2);  
+LongPassing: Decimal(15,2);  
+BallControl: Decimal(15,2);  
+Acceleration: Decimal(15,2);  
+Speed: Decimal(15,2);  
+Agility: Decimal(15,2);  
+Reactions: Decimal(15,2);  
+Balance: Decimal(15,2);  
+ShotPower: Decimal(15,2);  
+Jumping: Decimal(15,2);  
+Stamina: Decimal(15,2);  
+Strength: Decimal(15,2);  
+LongShots: Decimal(15,2);  
+Aggression: Decimal(15,2);  
+Interceptions: Decimal(15,2);  
+Positioning: Decimal(15,2);  
+Vision: Decimal(15,2);  
+Penalties: Decimal(15,2);  
+Composure: Decimal(15,2);  
+Marking: Decimal(15,2);  
+StandingTackle: Decimal(15,2);  
+SlidingTackle: Decimal(15,2);  
+GKDiving: Decimal(15,2);  
+GKHandling: Decimal(15,2);  
+GKKicking: Decimal(15,2);  
+GKPositioning: Decimal(15,2);  
+GKReflexes: Decimal(15,2);  
+Release_Clause: String(255);  
+}; 
+
+
+};
